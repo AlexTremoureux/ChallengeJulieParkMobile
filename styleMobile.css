@@ -1,0 +1,114 @@
+/*-----style.css version mobile-----
+--par Alexandre TREMOUREUX--*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+:root{
+--white: #F5F5F5;
+--light: #E0C9CB;
+--tan: #C3A1A0;
+--pink: #D9AAB7;
+--rose: #BA7E7E;
+--dark: #4E4E4E;
+}
+body{
+    font: 'Lato', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    max-width: 768px;
+    font-size: 1rem;
+}
+ul{
+    list-style: none;
+}
+.rose{
+    color: var(--rose);
+}
+.capital{
+    text-transform: uppercase;
+}
+article{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: auto;
+    width: 80%;
+    box-shadow: 5px 5px 15px var(--rose);
+    margin-top: 20px;
+}
+.category{
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.image{
+    grid-row: 2;
+    width: 100%;
+}
+.productTitle{
+    grid-row: 3;
+    text-align: center;
+    margin: 0px;
+}
+.price{
+    grid-row: 4;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+select{
+    color: var(--rose);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+option{
+    background: var(--light);
+}
+.click{
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+    margin-top: 30px;
+
+}
+.cart{
+    width: 75%;
+    font-size: 1em;
+    margin-right: 5px;
+}
+.favorite{
+    width: 25%;
+}
+.cart, .favorite{
+    border: solid 1px;
+    border-radius: 30px;
+    height: 45px;
+    color: var(--white);
+    background-color: var(--pink);
+    cursor: pointer;
+}
+.cart:hover, .favorite:hover{
+    background-color: var(--rose);
+    transition: .8s;
+}
+.description{
+    grid-row: 7;
+    padding: 10px 50px;
+    text-align: center;
+}
+footer{
+    color: var(--rose);
+    font-size: 0.4em;
+    text-align: center;
+    margin-top: 100px;
+}
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--dark);
+}
